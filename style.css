@@ -1,3 +1,57 @@
+/* =================== */
+/*    Normalization    */
+/* =================== */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: 0;
+}
+/* =================== */
+/*  Menu-Bar Styling   */
+/* =================== */
 .menu-bar > ul ul {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
 }
+.menu-bar > ul ul ul {
+  left: 100%;
+  top: 0;
+  width: 100%;
+}
+.menu-bar ul {
+  background-color: #ddd;
+}
+.menu-bar > ul {
+  background-color: #ddd;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.menu-bar {
+  text-align: center;
+}
+.menu-bar > ul > li {
+  display: inline-block;
+}
+.menu-bar ul > li {
+  position: relative;
+}
+.menu-bar ul > li > a {
+  display: block;
+  padding: 10px;
+}
+.menu-bar ul > li:hover > a {
+  background: rgba(0, 0, 0, .5);
+  color: white;
+}
+.menu-bar ul > li:hover > ul {
+  display: block;
+}
+
+
